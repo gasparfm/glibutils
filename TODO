@@ -1,0 +1,3 @@
+* Create Makefile (so lazy to do it before uploading)
+* Documentation
+* Make Callback example simpler. It would be great using Glib slots

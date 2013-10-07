@@ -1,0 +1,7 @@
+#!/bin/bash
+g++ -c gutils.cpp gutils_regex.cpp gutils_string.cpp gutils_exception.cpp `pkg-config --libs --cflags glibmm-2.4`
+g++ -o regextest regextest.cpp *.o `pkg-config --libs --cflags glibmm-2.4`
+g++ -o regexcallback regexCallback.cpp *.o `pkg-config --libs --cflags glibmm-2.4`
+g++ -o replacestring replaceString.cpp *.o `pkg-config --libs --cflags glibmm-2.4`
+g++ -o trimming trimming.cpp *.o `pkg-config --libs --cflags glibmm-2.4`
+
