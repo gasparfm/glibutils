@@ -1,3 +1,22 @@
+/**
+*************************************************************
+* @file regexCallback.cpp
+* @brief More tests with regex
+*  In this example we will parse a regex in a string and then parse it in
+*  a function.
+*
+*  Idea: Useful to create functions or keywords in a user input (or internal
+*  input within our program) to modify the behavior of our libs.
+*
+*
+* @author Gaspar Fernández <blakeyed@totaki.com>
+* @version
+* @date 07 oct 2013
+* Changelog
+*  - 20131008 Initial release
+*
+*
+*************************************************************/
 #include <glibmm/ustring.h>
 #include <iostream>
 #include "gutils.h"

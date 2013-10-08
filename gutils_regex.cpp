@@ -1,20 +1,12 @@
 /**
 *************************************************************
 * @file gutils_regex.cpp
-* @brief Breve descripción
-* Pequeña documentación del archivo
-*
-*
-*
-*
+* @brief Description
 *
 * @author Gaspar Fernández <blakeyed@totaki.com>
 * @version
-* @date 07 oct 2013
-* Historial de cambios:
-*
-*
-*
+* @date 05 oct 2013
+* Changelog:
 *
 *
 *

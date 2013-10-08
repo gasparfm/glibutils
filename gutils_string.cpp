@@ -1,17 +1,14 @@
 /**
 *************************************************************
 * @file gutils_string.cpp
-* @brief Breve descripción
-* Pequeña documentación del archivo
-*
-*
+* @brief Gutils string
 *
 *
 *
 * @author Gaspar Fernández <blakeyed@totaki.com>
 * @version
-* @date 07 oct 2013
-* Historial de cambios:
+* @date 02 oct 2013
+* Changelog
 *
 *
 *

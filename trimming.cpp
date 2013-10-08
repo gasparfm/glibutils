@@ -1,23 +1,15 @@
 /**
 *************************************************************
-* @file test.cpp
-* @brief Breve descripción
-* Pequeña documentación del archivo
-*
-*
-*
-*
+* @file trimming.cpp
+* @brief Just trim strings
+* The code behind trim() has been seen on Internet for a long
+* time. I just use it with ustring.
 *
 * @author Gaspar Fernández <blakeyed@totaki.com>
 * @version
 * @date 01 oct 2013
-* Historial de cambios:
-*
-*
-*
-*
-*
-*
+* Changelog
+*  - Initial release of demo
 *
 *************************************************************/
 

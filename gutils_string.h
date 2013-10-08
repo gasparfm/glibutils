@@ -11,10 +11,36 @@ using namespace Glib;
 
 namespace Gutils
 {
+  /* White spaces */
   const ustring whiteSpaces( " \f\n\r\t\v" );
+  /* endl character */
   const ustring endl="\n";
 
+  /** 
+   * replace()
+   * @brief Replaces substrings within source
+   *
+   * @param source Source text where to search for everything
+   * @param fromStr substring to search for in source
+   * @param toStr substring to replace fromStr with
+   * @param offset source position to start
+   * @param times Max times to replace then string. (0 = replace all)
+   *
+   * @return source ustring with fromStr replaced with toStr
+   */
   ustring replace(ustring source, ustring fromStr, ustring toStr, int offset=0, int times=1);
+
+  /** 
+   * replace()
+   * @brief Replaces substrings within source
+   *
+   * @param source Source text where to search for everything
+   * @param strMap map with sources and destination strings
+   * @param offset source position to start
+   * @param times Max times to replace then string. (0 = replace all)
+   *
+   * @return source ustring with fromStr replaced with toStr
+   */
   ustring replace(ustring source, std::map<ustring,ustring>strMap, int offset=0, int times=1);
 
   inline ustring replaceAll(ustring source, ustring fromStr, ustring toStr, int offset=0)

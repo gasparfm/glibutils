@@ -15,26 +15,48 @@ namespace Gutils
   class RegexMatches
   {
   public:
-    /* In a regexp we can find several return expressions, imagine %([a-z])% in "Hello %goodbye% guys" 
-     it would return "%goodbye% and goodbye as second expression. SingleMatch is just one of them.*/
+    /**
+       In a regexp we can find several return expressions, imagine %([a-z])% in "Hello %goodbye% guys" 
+       it would return "%goodbye% and goodbye as second expression. SingleMatch is just one of them.
+    */
     struct SingleMatch
     {
       ustring str;
       int start, end, size;
     };
     typedef std::vector<SingleMatch> Match;
-    /* But a regex may be found several times within a string, so "First %hello% then %goodbye%", would
-     return (%hello%, hello) and (%goodbye%, goodbye). Each pair will be a Match.*/
+    /**
+	But a regex may be found several times within a string, so "First %hello% then %goodbye%", would
+	return (%hello%, hello) and (%goodbye%, goodbye). Each pair will be a Match.
+    */
     typedef std::vector<Match> Matches;
 
+    /**
+     * @brief RegexMatches constructor
+     * @param regex Regular Expression
+     * @param text Input text
+     * @param offset Where to start within text
+     * @param match_options RegexMatchFlags
+     * @param compile_options Compile Options
+     */
     RegexMatches(ustring regex, ustring text, int offset=0, 
 		  Glib::RegexMatchFlags match_options=static_cast< Glib::RegexMatchFlags >(0), 
 		  Glib::RegexCompileFlags compile_options=static_cast< Glib::RegexCompileFlags >(0) );
     virtual ~RegexMatches();
 
-    /* Gets all matches */
+    /**
+     * @brief Gets all matches of regexp within the original string
+     * @return Matches object (vector or vectors of SingleMatch)
+     */
     Matches getAll();
-    /* Gets current Match */
+
+    /**
+     * @brief Gets the current Match pointed by the internal pointer. It
+     * can be used to easily iterate the class.
+     *
+     * @throws Gutils::Exception if internal pointer is invalid.
+     * @return Current element
+     */
     Match get();
     /* Gets single match (number e) */
     SingleMatch get(unsigned e, bool exception=false);

@@ -1,22 +1,16 @@
 /**
 *************************************************************
 * @file test.cpp
-* @brief Breve descripción
-* Pequeña documentación del archivo
-*
-*
-*
-*
+* @brief Replace strings with glib
+* Replace words in strings. You can replace once, twice or
+* everytime. You can also use a map to input all the 
+* strings being substituted.
 *
 * @author Gaspar Fernández <blakeyed@totaki.com>
 * @version
 * @date 01 oct 2013
 * Historial de cambios:
-*
-*
-*
-*
-*
+*  - Initial demo release
 *
 *
 *************************************************************/
